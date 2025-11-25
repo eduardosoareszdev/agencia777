@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência 777 - Sites Profissionais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                400: '#a78bfa', // Violet 400
+                500: '#8b5cf6', // Violet 500
+                600: '#7c3aed', // Violet 600
+                700: '#6d28d9', // Violet 700
+              },
+              accent: {
+                400: '#22d3ee', // Cyan 400
+                500: '#06b6d4', // Cyan 500
+                600: '#0891b2', // Cyan 600
+              },
+              dark: {
+                950: '#020617', // Slate 950
+                900: '#0f172a', // Slate 900
+                800: '#1e293b', // Slate 800
+              }
+            },
+            animation: {
+              'blob': 'blob 10s infinite',
+              'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'gradient-x': 'gradient-x 15s ease infinite',
+              'gradient-xy': 'gradient-xy 6s ease infinite',
+              'shimmer': 'shimmer 2s linear infinite',
+              'grid-flow': 'grid-flow 20s linear infinite',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'right center'
+                },
+              },
+              'gradient-xy': {
+                '0%, 100%': {
+                    'background-size': '400% 400%',
+                    'background-position': 'left top'
+                },
+                '50%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'right bottom'
+                }
+              },
+              'grid-flow': {
+                '0%': { backgroundPosition: '0 0' },
+                '100%': { backgroundPosition: '50px 50px' }
+              },
+              shimmer: {
+                from: {
+                  backgroundPosition: '0 0'
+                },
+                to: {
+                  backgroundPosition: '-200% 0'
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020204;
+        color: #f5f5f5;
+        overflow-x: hidden;
+      }
+      
+      /* Animation Delays manuais */
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .gradient-text {
+        background: linear-gradient(to right, #a78bfa, #22d3ee, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .animate-gradient-text {
+         background-size: 200% auto;
+         background-clip: text;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         animation: gradient-x 4s linear infinite;
+      }
+
+      /* Grid Tecnológico em Movimento */
+      .bg-grid-moving {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        animation: grid-flow 20s linear infinite;
+      }
+      
+      .bg-grid-mask-fade {
+        mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
